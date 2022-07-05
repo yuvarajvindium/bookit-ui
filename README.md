@@ -14,6 +14,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+
+## Generate New Component
+### Without Lazy Loading
+npx generate-react-cli component Box
+
+### With Lazy Loading
+npx generate-react-cli component Box --withLazy=true
+
+check https://www.npmjs.com/package/generate-react-cli for more
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
