@@ -2,19 +2,22 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home.lazy';
 import About from './pages/About/About.lazy';
+import Form from './pages/Form/Form.lazy';
+import Signin from './pages/Signin/Signin';
 
 function App() {
   return (
     <div className="App">
-     <h1>Book it now</h1>
-
-     <Routes>
+      {window.location.pathname !== "/signup" &&
+        window.location.pathname !== "/forgot-password"
+        ? <h1>Book it now</h1> : null}
+      <Routes>
+        <Route path="/signup" element={<Form path="sign-up" />} />
+        <Route path="/forgot-password" element={<Form path="forgot-password" />} />
+        <Route path="/reset-password" element={<About />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/signin" element={<About />} />
-        <Route path="/signup" element={<About />} />
-        <Route path="/forgot-password" element={<About />} />
-        <Route path="/reset-password" element={<About />} />
+        <Route path="/signin" element={<Signin />} />
         <Route path="/me" element={<About />} />
         <Route path="/bookings" element={<About />} />
       </Routes>
