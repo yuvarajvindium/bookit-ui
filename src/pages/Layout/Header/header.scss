@@ -1,0 +1,26 @@
+.navbar{
+   background-color:white;
+   width:100%
+}
+.logo{
+    width: 11%;
+    margin-left: 1.5%;
+}
+
+.logout-button{ 
+   font-size:large;
+   color:rgb(37, 150, 190);
+   font-family:'Courier New', monospace;
+   font-weight:100;
+   padding-right: 2%;
+   border: none;
+   background: none;
+  
+}
+.logout-button:hover{
+   color: red;
+}
+#icon{
+    margin-right: 2px;
+    margin-bottom: 2px;   
+ }
