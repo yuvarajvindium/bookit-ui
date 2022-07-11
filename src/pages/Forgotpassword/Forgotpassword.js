@@ -2,6 +2,7 @@ import React from 'react';
 import './Forgotpassword.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 
 const Forgotpassword = () => {
   const [values, setValues] = useState({});
@@ -44,7 +45,7 @@ const Forgotpassword = () => {
               onChange={handleChange} />
             {errors.email && <span className="text-danger">{errors.email}</span>}
             <section className="d-grid gap-2">
-              <button type="submit" className="btn btn-color forgot-button" disabled={Object.values(errors).some(v => v)}>Send Link</button>
+              <Button type="submit" className="btn btn-color forgot-button mt-3" disabled={Object.values(errors).some(v => v)}>Send Link</Button>
             </section>
             <div className="row">
               <div className="col-5 line"></div>

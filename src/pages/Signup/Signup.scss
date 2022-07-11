@@ -4,7 +4,7 @@
 }
 .input-form {
   height: 40px;
-  margin: 10px 0px;
+  // margin: 10px 0px;
 }
 .btn-color {
   background-color: #47525e;
@@ -26,7 +26,7 @@
 
 .form-main-page {
   background-color: #fff;
-  padding: 40px;
+  padding: 20px;
 }
 
 .form-row {
@@ -38,4 +38,17 @@
 .form-header {
   text-transform: uppercase;
   font-weight: bolder;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  color: #4588f0;
+  font-size: 50px;
+}
+.signup-text {
+  color: grey;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.label-text {
+  color: rgb(148, 144, 144);
 }
