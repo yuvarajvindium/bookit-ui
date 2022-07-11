@@ -32,23 +32,30 @@ const Forgotpassword = () => {
 
   }
 
-  return <div className="mt-3">
-    <p className="text-center p-color ">{paraText}</p>
-    <form className="form-container" onSubmit={handleSubmit}>
-      <input type="text" className="form-control input-form" name="email" placeholder="Email"
-        onChange={handleChange} />
-      {errors.email && <span className="text-danger">{errors.email}</span>}
-      <section className="d-grid gap-2">
-        <button type="submit" className="btn btn-color forgot-button" disabled={Object.values(errors).some(v => v)}>Send Link</button>
-      </section>
-      <div className="row">
-        <div className="col-5 line"></div>
-        <div className="col-2 text-center"> OR </div>
-        <div className="col-5 line"></div>
+  return <div className="Form container-fluid">
+    <section className="row form-row justify-content-center ">
+      <section className="col-12 col-sm-4 col-md-4 form-main-page">
 
-      </div>
-      <Link to='/signin' className="link-area"><p className="mt-3 back-login-p" >Back to Login  </p></Link>
-    </form>
+        <div className="mt-3">
+          <h1 className="text-center form-header mt-5"> Bookit</h1>
+          <p className="text-center p-color ">{paraText}</p>
+          <form className="form-container" onSubmit={handleSubmit}>
+            <input type="text" className="form-control input-form" name="email" placeholder="Email"
+              onChange={handleChange} />
+            {errors.email && <span className="text-danger">{errors.email}</span>}
+            <section className="d-grid gap-2">
+              <button type="submit" className="btn btn-color forgot-button" disabled={Object.values(errors).some(v => v)}>Send Link</button>
+            </section>
+            <div className="row">
+              <div className="col-5 line"></div>
+              <div className="col-2 text-center"> OR </div>
+              <div className="col-5 line"></div>
+            </div>
+            <Link to='/signin' className="link-area"><p className="mt-3 back-login-p" >Back to Login  </p></Link>
+          </form>
+        </div>
+      </section>
+    </section>
   </div>
 }
 
