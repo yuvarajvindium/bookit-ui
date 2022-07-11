@@ -1,20 +1,38 @@
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Home from './pages/Home/Home.lazy';
-import About from './pages/About/About.lazy';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home/Home.lazy";
+import About from "./pages/About/About.lazy";
+import Signin from "./pages/Signin/Signin.lazy";
+import Signup from "./pages/Signup/Signup.lazy";
+import Forgotpassword from "./pages/Forgotpassword/Forgotpassword.lazy";
+import Resetpassword from "./pages/Resetpassword/Resetpassword.lazy";
+import BookSpaceModal from "./pages/BookSpace/BookSpaceModal";
+import MyProfile from "./pages/MyProfile/MyProfile.lazy";
+import MyBookings from "./pages/MyBookings/MyBookings.lazy";
+import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
 
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
+=======
+      <h1>Book it now</h1>
+
+>>>>>>> a9ec9091a3c02d02554780dd4c294a1a38a7e0ee
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/signin" element={<About />} />
-        <Route path="/signup" element={<About />} />
-        <Route path="/forgot-password" element={<About />} />
-        <Route path="/reset-password" element={<About />} />
-        <Route path="/me" element={<About />} />
-        <Route path="/bookings" element={<About />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<Forgotpassword />} />
+        <Route path="/reset-password" element={<Resetpassword />} />
+        <Route path="/me" element={<MyProfile />} />
+        <Route path="/bookings" element={<MyBookings />} />
+        <Route path="/book-space" element={<BookSpaceModal />} />
+        <Route
+          path="/book-space-confirmation"
+          element={<BookSpaceConfirmation />}
+        />
       </Routes>
     </div>
   );
