@@ -14,8 +14,7 @@ import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
 function App() {
   return (
     <div className="App">
-      <h1>Book it now</h1>
-
+      {window.location.pathname !== "/signin" ? <h1>Book it now</h1> : null}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
