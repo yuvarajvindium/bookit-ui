@@ -10,6 +10,7 @@ import BookSpaceModal from "./pages/BookSpace/BookSpaceModal";
 import MyProfile from "./pages/MyProfile/MyProfile.lazy";
 import MyBookings from "./pages/MyBookings/MyBookings.lazy";
 import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
+import BookSpaceForm from "./pages/BookSpace/BookSpaceForm";
 import Layout from "./pages/Layout/Layout";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/me" element={<MyProfile />} />
           <Route path="/bookings" element={<MyBookings />} />
           <Route path="/book-space" element={<BookSpaceModal />} />
+          <Route path="/new-book-space" element={<BookSpaceForm />} />
           <Route
             path="/book-space-confirmation"
             element={<BookSpaceConfirmation />}
