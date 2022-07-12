@@ -11,28 +11,29 @@ import MyProfile from "./pages/MyProfile/MyProfile.lazy";
 import MyBookings from "./pages/MyBookings/MyBookings.lazy";
 import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
 import BookSpaceForm from "./pages/BookSpace/BookSpaceForm";
+import Layout from "./pages/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
-      <h1>Book it now</h1>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/forgot-password" element={<Forgotpassword />} />
-        <Route path="/reset-password" element={<Resetpassword />} />
-        <Route path="/me" element={<MyProfile />} />
-        <Route path="/bookings" element={<MyBookings />} />
-        <Route path="/book-space" element={<BookSpaceModal />} />
-        <Route path="/new-book-space" element={<BookSpaceForm />} />
-        <Route
-          path="/book-space-confirmation"
-          element={<BookSpaceConfirmation />}
-        />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/forgot-password" element={<Forgotpassword />} />
+          <Route path="/reset-password" element={<Resetpassword />} />
+          <Route path="/me" element={<MyProfile />} />
+          <Route path="/bookings" element={<MyBookings />} />
+          <Route path="/book-space" element={<BookSpaceModal />} />
+          <Route path="/new-book-space" element={<BookSpaceForm />} />
+          <Route
+            path="/book-space-confirmation"
+            element={<BookSpaceConfirmation />}
+          />
+        </Routes>
+      </Layout>
     </div>
   );
 }
