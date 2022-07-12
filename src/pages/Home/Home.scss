@@ -1,1 +1,42 @@
-.Home {}
+.Home {
+    box-shadow: 5px 10px 8px #888888;  
+}
+.hrshadow{
+    border:solid 1px;
+    box-shadow: 15px 10px 8px #888888;      
+
+}
+.cardshadow{
+    box-shadow: 5px 5px 15px #888888;     
+
+}
+.center {
+    text-align:left;
+    margin-left: 2%;
+    height: 15%;
+    width: 93%;
+  }
+ .text-primary{
+    height: 12vh; 
+ }
+
+#highlightbycolor{
+    color: rgb(37, 150, 190);
+}
+#textalign{
+    padding-top: 6vh;
+    padding-left: 2vh;
+    font-size: x-large;
+}
+.headings{
+    font-size: x-large;
+    padding-top: 3vh;
+    padding-left: 2vh;
+}
+.card{
+    margin-left: 2vh;
+    height: 20vh;
+}
+.col-sm-4{
+    padding-right: 5vh ;
+}
