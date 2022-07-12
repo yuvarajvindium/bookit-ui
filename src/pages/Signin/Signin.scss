@@ -1,1 +1,39 @@
-.Signin {}
+.Signin {
+  width: 38%;
+  margin-left: 32%;
+  border: 1px solid;
+  padding: 20px;
+  box-shadow: 2px 2px 10px 10px #c3c3db;
+  margin-top: 3%;
+
+  .signInBookIt {
+    color: blue;
+    font-size: 2.75rem;
+  }
+
+  .signInText {
+    margin-right: 75%;
+  }
+
+  .emailLabel {
+    margin-right: 64%;
+  }
+
+  .passwordLable {
+    margin-right: 90%;
+  }
+
+  .forgotPassword {
+    margin-right: 54%;
+  }
+
+  .signUpLink {
+    margin-top: 10%;
+  }
+
+  .signInForm {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 10%;
+  }
+}
