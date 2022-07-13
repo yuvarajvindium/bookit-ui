@@ -10,6 +10,8 @@ import BookSpaceModal from "./pages/BookSpace/BookSpaceModal";
 import MyProfile from "./pages/MyProfile/MyProfile.lazy";
 import MyBookings from "./pages/MyBookings/MyBookings.lazy";
 import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
+import BookSpaceForm from "./pages/BookSpace/BookSpaceForm";
+import Layout from "./pages/Layout/Layout";
 
 function App() {
   return (
