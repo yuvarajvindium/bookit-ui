@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import Home from "./pages/Home/Home.lazy";
 import About from "./pages/About/About.lazy";
 import Signin from "./pages/Signin/Signin.lazy";
