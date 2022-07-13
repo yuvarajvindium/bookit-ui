@@ -17,19 +17,20 @@ function App() {
     <div className="App">
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/signin" element={<Signin />} />
+          <Route path="/" element={<Signin />}/>
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgot-password" element={<Forgotpassword />} />
           <Route path="/reset-password" element={<Resetpassword />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/me" element={<MyProfile />} />
           <Route path="/bookings" element={<MyBookings />} />
-          <Route path="/book-space" element={<BookSpaceModal />} />
+           <Route path="/book-space" element={<BookSpaceModal />} />
+          
           <Route
             path="/book-space-confirmation"
             element={<BookSpaceConfirmation />}
-          />
+          />              
         </Routes>
       </Layout>
     </div>
