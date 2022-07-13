@@ -1,26 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Modal, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import { CustomFieldInput } from "./CustomFieldInput";
 import "./BookSpace.scss";
 
-const BookSpaceModal = () => {
-  const [show, setShow] = useState(false);
-  const navigate = useNavigate();
-  const handleClose = () => {
-    setShow(false);
-    navigate(`/book-space-confirmation`);
-  };
-  const handleCancel = () => {
-    setShow(false);
-  };
-  const handleShow = () => setShow(true);
+const BookSpaceModal = ({ show, handleClose, formData, handleSave }) => {
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Confirm
-      </Button>
       <Modal
         show={show}
         onHide={handleClose}
@@ -35,33 +21,34 @@ const BookSpaceModal = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="justify-content-center">
-          {/* <p className="mb-0">
-            <b>20 workstations</b> have been booked at <b>Ganesh Chambers</b>,
-            Building 2, Floor 3
-            <b> Chennai from 11th July, 2022 to 15th July, 2022 </b>
-          </p>
-          <p className="mb-0">For Yuvaraj, Jashwanth, Mahesh, Karthick.</p> */}
-
-          <CustomFieldInput label={"No of workspace booked"} inputs={"20"} />
+          <CustomFieldInput
+            label={"No . of workspaces booked"}
+            inputs={formData?.workspace_required}
+          />
           <CustomFieldInput
             label={"Location"}
-            inputs={"Chennai - Ganesh Chambers"}
+            inputs={"Ganesh Chambers - Chennai"}
           />
           <CustomFieldInput
             label={"Booked Dates"}
-            inputs={"16/08/2022 - 18/08/2022"}
+            inputs={
+              <>
+                <span className="me-2">{formData?.from_date}</span> -
+                <span className="ms-2">{formData?.to_date}</span>
+              </>
+            }
           />
         </Modal.Body>
         <Modal.Footer className="justify-content-center border-0">
           <Button
             className="bookspace-cancel-btn bookspace-btn bg-transparent border-secondary me-4"
-            onClick={handleCancel}
+            onClick={handleClose}
           >
             Cancel
           </Button>
           <Button
             className="bookspace-confirm-btn bookspace-btn"
-            onClick={handleClose}
+            onClick={handleSave}
           >
             Confirm
           </Button>

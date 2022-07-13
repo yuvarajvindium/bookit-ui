@@ -5,12 +5,12 @@ import Signin from "./pages/Signin/Signin.lazy";
 import Signup from "./pages/Signup/Signup.lazy";
 import Forgotpassword from "./pages/Forgotpassword/Forgotpassword.lazy";
 import Resetpassword from "./pages/Resetpassword/Resetpassword.lazy";
-import BookSpaceModal from "./pages/BookSpace/BookSpaceModal";
 import MyProfile from "./pages/MyProfile/MyProfile.lazy";
 import MyBookings from "./pages/MyBookings/MyBookings.lazy";
 import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
 import BookSpaceForm from "./pages/BookSpace/BookSpaceForm";
 import Layout from "./pages/Layout/Layout";
+import BookSpace from "./pages/BookSpace/BookSpace.lazy";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/reset-password" element={<Resetpassword />} />
           <Route path="/me" element={<MyProfile />} />
           <Route path="/bookings" element={<MyBookings />} />
-          <Route path="/book-space" element={<BookSpaceModal />} />
+          <Route path="/book-space" element={<BookSpace />} />
           <Route path="/new-book-space" element={<BookSpaceForm />} />
           <Route
             path="/book-space-confirmation"

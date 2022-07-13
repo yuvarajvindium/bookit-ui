@@ -7,10 +7,10 @@ export const BookSpaceConfirmation = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   setAlert(false);
-    //   navigate(`/`);
-    // }, 5000);
+    setTimeout(() => {
+      setAlert(false);
+      navigate(`/`);
+    }, 5000);
   }, [navigate]);
 
   return (
