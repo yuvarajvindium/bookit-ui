@@ -10,6 +10,7 @@ import BookSpaceModal from "./pages/BookSpace/BookSpaceModal";
 import MyProfile from "./pages/MyProfile/MyProfile.lazy";
 import MyBookings from "./pages/MyBookings/MyBookings.lazy";
 import { BookSpaceConfirmation } from "./pages/BookSpace/BookSpaceConfirmation";
+import BookingDetails from "./pages/BookingDetails/bookingDetails";
 
 function App() {
   return (
@@ -26,10 +27,9 @@ function App() {
         <Route path="/me" element={<MyProfile />} />
         <Route path="/bookings" element={<MyBookings />} />
         <Route path="/book-space" element={<BookSpaceModal />} />
-        <Route
-          path="/book-space-confirmation"
-          element={<BookSpaceConfirmation />}
-        />
+        <Route path="/book-space-confirmation"element={<BookSpaceConfirmation />}/>
+        <Route path='/booking-Details' element={<BookingDetails/>}/>
+        
       </Routes>
     </div>
   );
