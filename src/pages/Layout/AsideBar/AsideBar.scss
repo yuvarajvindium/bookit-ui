@@ -5,32 +5,28 @@
   height: 100%;
   text-align: left;
   box-shadow: 5px 10px 8px #888888;
-  
 }
-
 .sidebar a {
     display: block;
     color: whitesmoke;
     padding: 16px;
     text-decoration: none;
-    padding: 40px 13px 10px 40px;
-    font-size: 2.2vh;
+    padding: 20px 0px 20px 50px;
+    font-size: 130%;
     font-weight: 400;
     align-content: center;
+    margin-bottom: 10%;
     
-}
- 
+} 
 .sidebar a.active {
- 
   color: rgba(55,153,240,255);
 }
-
 .sidebar a:hover{
   background-color: rgba(245,245,245,255);
   color:black;
 }
-#sidebaricon{
-    margin-right: 2vh;
+.sidebaricon{
+    margin-right: 5%;
 }
 #sidenav_title{
     color: white;
@@ -39,7 +35,5 @@
     font-style: bold;
     font-weight: 1000;
     font-stretch:ultra-expanded;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 22%;
+    padding: 30px 20px 20px 60px;
 }

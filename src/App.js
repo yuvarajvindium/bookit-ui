@@ -26,12 +26,14 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/me" element={<MyProfile />} />
           <Route path="/bookings" element={<MyBookings />} />
+
           <Route path="/book-space" element={<BookSpaceModal />} />
           <Route path="/new-book-space" element={<BookSpaceForm />} />
+
           <Route
             path="/book-space-confirmation"
             element={<BookSpaceConfirmation />}
-          />
+          />              
         </Routes>
       </Layout>
     </div>
