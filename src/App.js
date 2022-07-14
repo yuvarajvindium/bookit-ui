@@ -16,25 +16,26 @@ import Layout from "./pages/Layout/Layout";
 function App() {
   return (
     <div className="App">
-      {window.location.pathname !== "/signup" &&
-        window.location.pathname !== "/forgot-password"
-        ? <h1>Book it now</h1> : null}
+      <Layout>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/forgot-password" element={<Forgotpassword />} />
+          <Route path="/reset-password" element={<Resetpassword />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/me" element={<MyProfile />} />
+          <Route path="/bookings" element={<MyBookings />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/forgot-password" element={<Forgotpassword />} />
-        <Route path="/reset-password" element={<Resetpassword />} />
-        <Route path="/me" element={<MyProfile />} />
-        <Route path="/bookings" element={<MyBookings />} />
-        <Route path="/book-space" element={<BookSpaceModal />} />
-        <Route
-          path="/book-space-confirmation"
-          element={<BookSpaceConfirmation />}
-        />
-      </Routes>
+          <Route path="/book-space" element={<BookSpaceModal />} />
+          <Route path="/new-book-space" element={<BookSpaceForm />} />
+
+          <Route
+            path="/book-space-confirmation"
+            element={<BookSpaceConfirmation />}
+          />
+        </Routes>
+      </Layout>
     </div>
   );
 }

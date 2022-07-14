@@ -1,42 +1,39 @@
-.Home {
-    box-shadow: 5px 10px 8px #888888;  
-}
-.hrshadow{
-    border:solid 1px;
-    box-shadow: 15px 10px 8px #888888;      
-
-}
-.cardshadow{
-    box-shadow: 5px 5px 15px #888888;     
-
-}
-.center {
+.home {
     text-align:left;
-    margin-left: 2%;
-    height: 15%;
-    width: 93%;
-  }
- .text-primary{
-    height: 12vh; 
- }
-
-#highlightbycolor{
-    color: rgb(37, 150, 190);
+    width:auto;
+    margin-left: -5%;
+    // font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-family:"adobe-clean", sans-serif; 
 }
-#textalign{
-    padding-top: 6vh;
-    padding-left: 2vh;
-    font-size: x-large;
+.hr{
+    border:solid 1px;
+    box-shadow: 15px 10px 8px #888888;    
+    width:auto;  
+}
+.cardtext{
+    color:  #92979a;
+}
+.cardheadings{
+    color: #41484f;    
 }
 .headings{
-    font-size: x-large;
-    padding-top: 3vh;
-    padding-left: 2vh;
+    margin-left: 3%;
+    color: #3396f1;
+ }
+ #welcomeName-row{
+    margin-left: 4%;
+ }
+ #text-name{
+    color:  #3396f1;
+ }
+.text-initial{
+    margin-left: 8%;
+    margin-top: 2%;
+    height:fit-content;
 }
-.card{
-    margin-left: 2vh;
-    height: 20vh;
-}
-.col-sm-4{
-    padding-right: 5vh ;
+.text-initial:hover{
+    cursor:pointer;
+ }
+.custom-recentbooking-section{
+    height:auto;
 }
