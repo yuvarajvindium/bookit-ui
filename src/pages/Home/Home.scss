@@ -1,1 +1,43 @@
-.Home {}
+.home {
+    text-align:left;
+    width:auto;
+    margin-left: -5%;
+    // font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-family:"adobe-clean", sans-serif; 
+}
+.hr{
+    border:solid 1px;
+    box-shadow: 15px 10px 8px #888888;    
+    width:auto;  
+}
+.cardtext{
+    color:  #92979a;
+    font-size: 20px;
+    padding:10px;
+    
+}
+
+.cardheadings{
+    color: #41484f;    
+}
+.headings{
+    margin-left: 3%;
+    color: #3396f1;
+ }
+ #welcomeName-row{
+    margin-left: 4%;
+ }
+ #text-name{
+    color:  #3396f1;
+ }
+.text-initial{
+    margin-left: 8%;
+    margin-top: 2%;
+    height:fit-content;
+}
+.text-initial:hover{
+    cursor:pointer;
+ }
+.custom-recentbooking-section{
+    height:auto;
+}
