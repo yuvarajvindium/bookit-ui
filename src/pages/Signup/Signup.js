@@ -37,7 +37,7 @@ const Signup = () => {
         setColor("success");
         setHeader("Success");
         setContent("User registered successfully");
-        navigate('/signin');
+        navigate('/');
       }
 
     }
