@@ -10,6 +10,7 @@ import BookSpaceModal from "./pages/BookSpace/BookSpace.lazy";
 import MyProfile from "./pages/MyProfile/MyProfile.lazy";
 import MyBookings from "./pages/MyBookings/MyBookings.lazy";
 import  BookSpaceConfirmation  from "./pages/BookSpace/BookSpace.lazy";
+
 import BookingDetails from "./pages/BookingDetails/bookingDetails.lazy"
 import BookSpaceForm from "./pages/BookSpace/BookSpaceForm"
 import Layout from "./pages/Layout/Layout.Lazy";

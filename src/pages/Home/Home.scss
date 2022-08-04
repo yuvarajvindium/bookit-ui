@@ -1,43 +1,109 @@
 .home {
-    text-align:left;
-    width:auto;
+    text-align: left;
+    width: auto;
     margin-left: -5%;
     // font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
-    font-family:"adobe-clean", sans-serif; 
-}
-.hr{
-    border:solid 1px;
-    box-shadow: 15px 10px 8px #888888;    
-    width:auto;  
-}
-.cardtext{
-    color:  #92979a;
-    font-size: 20px;
-    padding:10px;
-    
+    font-family: "adobe-clean", sans-serif;
 }
 
-.cardheadings{
-    color: #41484f;    
+.hr {
+    border: solid 1px;
+    box-shadow: 15px 10px 8px #888888;
+    width: auto;
 }
-.headings{
+
+.cardtext {
+    color: #92979a;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold
+}
+
+.card-headings {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-headers {
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.icon-headings {
+ top: 258px;
+left: 596px;
+width: 40px;
+height: 35px;
+color:#000000;
+opacity: 1;
+
+}
+
+.icon-dots {
+  float:right;
+  width: 35px;
+  height:25px;
+}
+.booking-icon{
+    top: 140px;
+    position: absolute;
+    left: 1256px;
+    width: 154px;
+    height: 40px;
+    background: #F06A3E 0% 0% no-repeat padding-box;
+    border-radius: 99px;
+    opacity: 1;
+    float:right;
+    font: normal normal medium 14px/19px Lato;
+letter-spacing: 0px;
+color: #FFFFFF;
+}
+
+.headings {
     margin-left: 3%;
-    color: #3396f1;
- }
- #welcomeName-row{
+    color: black;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#welcomeName-row {
     margin-left: 4%;
- }
- #text-name{
-    color:  #3396f1;
- }
-.text-initial{
+    font-weight: normal
+}
+
+#text-name {
+    color: #F06A3E !important;
+    font-weight: bold;
+
+}
+
+.text-initial {
     margin-left: 8%;
-    margin-top: 2%;
-    height:fit-content;
+    margin-top: 3%;
+    height: fit-content;
+    width: 400px;
+    height: 160px;
 }
-.text-initial:hover{
-    cursor:pointer;
- }
-.custom-recentbooking-section{
-    height:auto;
+
+.ub-border-left {
+    border-left: 2px solid #4fba46 !important
 }
+
+.rb-border-left {
+border-left: 2px solid #F06A3E !important;
+
+}
+
+.text-initial:hover {
+    cursor: pointer;
+}
+
+.custom-recentbooking-section {
+    height: auto;
+}
+
